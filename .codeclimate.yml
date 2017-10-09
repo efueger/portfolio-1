@@ -1,20 +1,29 @@
+---
 engines:
-  rubocop:
-    enabled: false
-  brakeman:
-    enabled: false
-  eslint:
-    enabled: false
   csslint:
-    enabled: true
+    enabled: false
   duplication:
-    enabled: true
+    enabled: false
     config:
       languages:
-      - javascript:
+      - ruby
+      - javascript
+      - python
+      - php
+  eslint:
+    enabled: true
+  fixme:
+    enabled: false
 ratings:
   paths:
-  - src/scripts/app
+  - "**.css"
+  - "**.inc"
+  - "**.js"
+  - "**.jsx"
+  - "**.module"
+  - "**.php"
+  - "**.py"
+  - "**.rb"
 exclude_paths:
 - public
 - tasks
